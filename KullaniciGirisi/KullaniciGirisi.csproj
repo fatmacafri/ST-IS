@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55EF7DD3-6533-40CD-B540-82DE06855A43}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KullaniciGirisi</RootNamespace>
+    <AssemblyName>KullaniciGirisi</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Emgu.CV, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.GPU, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.GPU.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.OCR, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.OCR.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.OpenCL, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.OpenCL.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.Stitching, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.Stitching.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.VideoStab, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.CV.VideoStab.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.4.10.1939, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.111.0\lib\net45\System.Data.SQLite.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowFormExtended">
+      <HintPath>..\packages\WindowFormExtended.1.0.0\lib\WindowFormExtended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>..\..\..\..\..\..\..\Emgu\emgucv-windesktop 3.4.1.2976\bin\ZedGraph.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Zen.Barcode.Core, Version=3.1.0.0, Culture=neutral, PublicKeyToken=b5ae55aa76d2d9de, processorArchitecture=MSIL">
+      <HintPath>..\packages\Zen.Barcode.Rendering.Framework.3.1.10729.1\lib\Zen.Barcode.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessRecognition.cs" />
+    <Compile Include="Classifier_Train.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kullanicigiris_yüztanima.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kullanicigiris_yüztanima.Designer.cs">
+      <DependentUpon>frm_kullanicigiris_yüztanima.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_depo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_depo.Designer.cs">
+      <DependentUpon>frm_tanimlar_depo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_depo_depokayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_depo_depokayit.Designer.cs">
+      <DependentUpon>frm_tanimlar_depo_depokayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_kullanici_giris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_kullanici_giris.Designer.cs">
+      <DependentUpon>frm_kullanici_giris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_kullanici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_kullanici.Designer.cs">
+      <DependentUpon>frm_tanimlar_kullanici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_kullanici_kullanicikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_kullanici_kullanicikayit.Designer.cs">
+      <DependentUpon>frm_tanimlar_kullanici_kullanicikayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_musteri_musterikayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_musteri_musterikayit.Designer.cs">
+      <DependentUpon>frm_tanimlar_musteri_musterikayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_satis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_satis.Designer.cs">
+      <DependentUpon>frm_tanimlar_satis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_satis_malzemelistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_satis_malzemelistesi.Designer.cs">
+      <DependentUpon>frm_tanimlar_satis_malzemelistesi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar.Designer.cs">
+      <DependentUpon>frm_tanimlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_stok.Designer.cs">
+      <DependentUpon>frm_tanimlar_stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_stok_ürünkayıt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_stok_ürünkayıt.Designer.cs">
+      <DependentUpon>frm_tanimlar_stok_ürünkayıt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_tanimlar_musteri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_musteri.Designer.cs">
+      <DependentUpon>frm_tanimlar_musteri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frm_tanimlar_satislistesi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_tanimlar_satislistesi.Designer.cs">
+      <DependentUpon>frm_tanimlar_satislistesi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kullanicigiris_yüztanima.resx">
+      <DependentUpon>frm_kullanicigiris_yüztanima.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_depo.resx">
+      <DependentUpon>frm_tanimlar_depo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_depo_depokayit.resx">
+      <DependentUpon>frm_tanimlar_depo_depokayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_kullanici_giris.resx">
+      <DependentUpon>frm_kullanici_giris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_kullanici.resx">
+      <DependentUpon>frm_tanimlar_kullanici.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_kullanici_kullanicikayit.resx">
+      <DependentUpon>frm_tanimlar_kullanici_kullanicikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_musteri_musterikayit.resx">
+      <DependentUpon>frm_tanimlar_musteri_musterikayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_satis.resx">
+      <DependentUpon>frm_tanimlar_satis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_satis_malzemelistesi.resx">
+      <DependentUpon>frm_tanimlar_satis_malzemelistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar.resx">
+      <DependentUpon>frm_tanimlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_stok.resx">
+      <DependentUpon>frm_tanimlar_stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_stok_ürünkayıt.resx">
+      <DependentUpon>frm_tanimlar_stok_ürünkayıt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_tanimlar_musteri.resx">
+      <DependentUpon>frm_tanimlar_musteri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frm_tanimlar_satislistesi.resx">
+      <DependentUpon>frm_tanimlar_satislistesi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\USER LOGIN ICON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets'))" />
+  </Target>
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.111.0\build\net45\System.Data.SQLite.Core.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
